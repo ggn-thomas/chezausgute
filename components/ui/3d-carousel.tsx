@@ -76,21 +76,20 @@ const keywords = [
 ]
 
 const duration = 0.15
-const transition = { duration, ease: [0.32, 0.72, 0, 1], filter: "blur(4px)" }
-const transitionOverlay = { duration: 0.5, ease: [0.32, 0.72, 0, 1] }
+const transition = { duration, ease: [0.32, 0.72, 0, 1] as const }
+const transitionOverlay = { duration: 0.5, ease: [0.32, 0.72, 0, 1] as const }
 
-const Carousel = memo(
-  ({
+const Carousel = memo(function Carousel({
     handleClick,
     controls,
     cards,
     isCarouselActive,
   }: {
     handleClick: (imgUrl: string, index: number) => void
-    controls: any
+    controls: ReturnType<typeof useAnimation>
     cards: string[]
     isCarouselActive: boolean
-  }) => {
+  }) {
     const isScreenSizeSm = useMediaQuery("(max-width: 640px)")
     const cylinderWidth = isScreenSizeSm ? 1600 : 2400
     const faceCount = cards.length

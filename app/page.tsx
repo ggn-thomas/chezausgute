@@ -1,7 +1,7 @@
 "use client"
 
 import {Bebas_Neue} from 'next/font/google'
-import React, { useState } from 'react';
+import React from 'react';
 import CarouselEvents from "../components/ui/carousel-events"
 import About from "../components/About"
 import MenuCards from "../components/MenuCards"

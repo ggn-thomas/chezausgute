@@ -1,5 +1,5 @@
 import {Bebas_Neue} from 'next/font/google'
-import { MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
+import { Instagram, Facebook } from 'lucide-react'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -60,7 +60,7 @@ export default function About() {
               </h3>
               <div className="bg-black rounded-lg p-3 shadow-lg">
                 <h4 className={`text-base font-bold text-[#ffcc00] ${bebasNeue.className} mb-2`}>
-                  Horaires d'Ouverture
+                  Horaires d&apos;Ouverture
                 </h4>
                 <div className="space-y-4 text-xs">
                   <div className="flex justify-between gap-3">
@@ -101,7 +101,7 @@ export default function About() {
             {/* Adresse */}
             
             <h3 className={`text-lg md:text-xl font-bold text-white ${bebasNeue.className} mb-1 text-left`}>
-              Découvrez l'ambiance
+              Découvrez l&apos;ambiance
             </h3>
             
             {/* Vidéo */}

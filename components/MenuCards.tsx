@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Bebas_Neue } from 'next/font/google'
-import { X, Utensils, Star, Clock, Users } from 'lucide-react'
+import { X, Utensils, Star } from 'lucide-react'
 
 const bebasNeue = Bebas_Neue({
   weight: '400',
@@ -79,7 +79,7 @@ export default function MenuCards() {
             </h2>
           </div>
           <p className={`text-xl text-white ${bebasNeue.className} max-w-2xl mx-auto`}>
-            Explorez nos différentes cartes et découvrez l'univers gustatif de Chez Auguste
+            Explorez nos différentes cartes et découvrez l&apos;univers gustatif de Chez Auguste
           </p>
         </div>
 
